@@ -1,0 +1,73 @@
+name: my_pisti
+description: "MyPisti - Turkish Card Game for Google Play. Play Pişti with AI opponents, friends, and unlock achievements!"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.0
+  riverpod: ^2.4.0
+  
+  # Database & Storage
+  sqflite: ^2.3.0
+  shared_preferences: ^2.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Networking
+  dio: ^5.3.0
+  
+  # UI & Animation
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.2.0
+  confetti: ^0.7.0
+  
+  # Audio
+  just_audio: ^0.9.34
+  
+  # Notifications
+  flutter_local_notifications: ^14.1.0
+  
+  # Analytics & Monetization
+  firebase_core: ^2.24.0
+  firebase_analytics: ^10.5.0
+  google_mobile_ads: ^3.0.0
+  in_app_purchase: ^3.1.0
+  
+  # Utils
+  uuid: ^4.0.0
+  intl: ^0.19.0
+  dio_cache_interceptor: ^3.4.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_linter: ^3.0.0
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/animations/
+    - assets/cards/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
